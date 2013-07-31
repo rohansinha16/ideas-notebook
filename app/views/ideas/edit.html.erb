@@ -1,0 +1,8 @@
+<h1> Edit Idea #<%= @i.id %> </h1>
+<%= form_for(@i, :url => idea_path(@i.id), :method => "put" ) do |i| %>
+  <%= i.label :name, "Edit your Name:" %>
+  <%= i.text_field :name %>
+  <%= i.label :description, "Edit your Idea:" %>
+  <%= i.text_field :description %>
+  <%= i.submit %>
+<% end %>

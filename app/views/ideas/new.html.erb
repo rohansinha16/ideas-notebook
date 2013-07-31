@@ -1,0 +1,9 @@
+<h1> Create a New Idea </h1>
+
+<%= form_for(@i) do |i| %>
+  <%= i.label :name, "Enter your Name:" %>
+  <%= i.text_field :name %>
+  <%= i.label :description, "Enter your Idea:" %>
+  <%= i.text_field :description %>
+  <%= i.submit %>
+<% end %>
